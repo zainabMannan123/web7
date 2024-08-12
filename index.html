@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3School</title>
+    <link rel="icon" href="https://www.w3schools.com//favicon.ico">
+    <style>
+        :root{
+--bs-green: #04AA6D;
+--bs-teal:#20c997;
+--bs-transparent: transparent;}
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Source Sans Pro', sans-serif;
+width: 100%;
+        }
+        .btn{
+            padding: 10px;
+            cursor: pointer;
+        }
+         
+        header{
+            height:15px;
+            width: 100%;
+            padding: 15px 0px;
+            display: flex;
+            align-items: center;
+            background-color: var(--bs-white);
+        }
+        /***utility class***/
+.btn{
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.bg.transparent{
+    background-color:var(transparent);
+    color:var(--bs-white);
+}
+.bg.transparent{
+    background-color:var(transparent);
+}
+.bg.transparent{
+    background-color:var(transparent);
+}
+.bg.transparent{
+    background-color:var(transparent);
+}
+
+
+.background-color{
+   background-color: transparent;
+    background-color:transparent;
+    background-color: transparent;
+     background-color: transparent;
+}
+      
+        .w3schools-logo{
+            width:49px ;
+            margin:  0px 3px;
+            padding:0px ;
+        }
+
+        .w3schools-logo img{
+            width:100%  ;
+            margin-right: 5px;
+        }
+        a {
+    color: inherit;
+}
+.w3-bar .w3-button {
+    white-space: normal;
+}
+ /***header-left***/
+ .header-left{
+    display: flex;
+    align-items: center;
+    height: 100%;
+ }
+ .header-left a{
+    height: 100%;
+    display: flex;
+    align-items:center ;
+    justify-items: center;
+    padding: 0px 20px;
+    font-size:18px ;
+font-weight: 600;
+
+ }
+ .header-left a:hover{
+background-color: #04AA6D;
+color: rgb(248, 255, 251);
+}
+
+.header-left a:first-child:hover{
+background-color: transparent;
+padding: 0px;
+}
+.fa-solid{
+    padding: 0px 3px;
+}
+.w3-bar .w3-bar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+}
+.togglelightdark{
+    transform: rotate(180deg);
+    gap: 190%;
+}
+.togglelightdark:hover{
+    color: #04AA6D;
+
+}
+#input{
+    width: 50%;
+}
+input{
+    height: 30px;
+    border-radius: 20px;
+    background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUSExIVFhUVFRUVGRgVFRUVFxcVFRUXFxUVFxUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFQ8QGC0dHR0rKy0rKysrLS0rLSstKy0rKysrKy0rLS0tKysrKystKy0tKy0tLS0rLS0tNy0rNy03N//AABEIALMBGQMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABgcBBQIDBAj/xABIEAABAgMFBgMFAwgHCQEAAAABAAIDEWEEMUFRcQUSIYGhsQYTwQciMpHwQlKCFCMzYnKSouE0Q1Njc5PRJCVEVIOys8PxFf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABsRAQEBAAMBAQAAAAAAAAAAAAABERIxUUEh/9oADAMBAAIRAxEAPwC7DnilcckNb8E7oGmN9EphmmnNarb3iCDZAN8zc74ITeMR5o3KqDamuFy0G0/GFlhO3Q8xYo4eXAHmO/ERwbzIUYt8a02z9M90ODhBhndmP714PHQGS9Nj2fDhNDWta0C4AABFx2xvFVuiH8zZoUIZxnuiO/y4ch/EvM6NtF99u3MxBgQmj5xA8r0ujtbdeuh9uyuUMYbBteO0bT+7ZpfLyV6oVqtrf+KD8vNgwz/49xeA288k/Lj/AKIY3kHxDaW/pLOyJWC/dd/lxOH8a2dh8RwIjgzeLIh/q4rTDcc90O4P/CSok23nmucSOyI0se1rgbw4Ag8ihiwKYJTDNQWxWyNA/QRC+HjBjOJEv7uKZuYaHeb+zepPsfbcK0A7s2ubLehPEojCbpifEXycCQcCVUbP6FUrjkmt+Cd0DTG+iSwwzQU5p2QDkbkrihrdghrfggVxyT1vondNOaBTDNNcLqp2TXkgVxySuKd0FL8UDS5KYZppdinZANcLqpXHJNeSd0AU5pTDNBS/FOyBTDNNb8E1uwTW/BAnjjksrHdZQYpfXJKdU0uxWk8W+IG2KBv7u/Ee7y4MOci+IbhRovJyQebxb4n/ACbdgQWiJaogJYz7LW3GLFIuYOp4KNbM2WQ4xozzFjv+N7uzR9ltAs7G2Y5m9FjO348U78R5xODW5MaJACi90WMZhrfiKiubogHACZOAXbDsRPxnkPUr0WSy7tXG8/6UXuhwEHjhWNouaNb+69DbNQfJesNAqu1rDkKKjXv2cx17B8l44+wW/Z4UUgEN1Jrl5Z/1+vmhqFxtllvAjmvM+xkKcRbNO8cF442zxlwwUNQ/3gsPO8WuDiyIz4Ht+JtMnNOLTwKkNp2dTitVabERqit/4b8RecTAjAMjgT4fDEYJfnYU+MuIm08WnMEEyGnVVbaYE5ScWuY7fY9vxMeLnNnqQRcQSDwKmvhXb35TDLXgNiwiGxWicpni17Z8Sxw4jmLwVWcb3pLqleia8k7oH1LJKdck0vxTS7FAp1Tp6p2Q15IFeidfRO6CnNAp1Sl1c07JrdggTxupmleia34J3QPXolOqac07IHT1SvRNbsE1vQK9Mkp1yTS/FNLsUCnVJVTsnBAnjcAqvs1p/wD0LZEtp4wIZdBsow3AZRI2r3AyoApN7Sdpug2Mw2GUa0vbZodPMnvv5MDz8lrbBZmwILIbBIMaGgUAUHK1x90S+gu7YtnmN83m7RaeM/ePBS/Z9nAa0YABGnbBhLvZDnQZZrmyHO+7Cq9bGfNVl1w4IHGXJdoZLh1yXIUvQUuxQJYdU9Oqdk15IFei4lv1kuXdNL8UHniQMOq8FqsU+HVbeXyXB7J8MEENt1hxktDFjussVlrYCfL92I0TO/AJm8SF7my321BH2irBtlln6KN7SsdOKipjZo7Xta5pDmuALSOIkRMEHLiF20xzUM9nttLRFsZvs7gWTxgRZuZ+6fMZowKZ9lUKdc0r0TW7BNb8ECvROs+id0FOaBTqnp1TsmvJAr0SePRO6Cl+KBLDrkksOqCl2KdkD06pXDJDXkndA9eiU6ppzTsgU6p9ap2wTW/BAr0RO6ygrvxdEMbasCDe2zWd0Y5eZHduNGoZDeea7doRMMV4oDt/ae0Hk8GxIUIUEKAwnrFd81ztrpmWCixmxQplTazj3QovsuFcpbZG8AcckK9ENkr+S7KYoOHrRKYZqoDqg6YpTDNECuGSa8krjknrfRApjmml+KSwwzQ/VUDtklcErjklcckHGIzNajaFmnqtyvNaocxLDNBAA82faNmicQ2N5llfl7w82Gdd6ER+NWO08J4ZKu/HjdyD51xgRYEYH/DisJ6T+asGA6Ynjki12Gt2CHqlcUphmiFMc0FOaSwwzT06oFcMkNeVErjkg730QKY5pQXpTDNCMMM0DS7FK4ZJXHJK45IGvJKY5p630SWGGaBpzSuCfWqVxyQK4ZIa34JXHJPrRApjmsyKxTDNOaCs9nQ5WvaJP/NvPJ0CzkdCsxOLqLutLdzaFub94wIsv24DYf8A6CukfF6KLG+2Uy7opNZm/NR/ZQu+pKRQBwl1VK7RTmnZOkuqV6IhrdghrfglemSda5IHdNOaU6p0l1QOyGt2CV6J1pkga34IOuKU65JTqgaXYrjEHCi5/Wqw7PoggftMZ/u+1E/2L5fJTHZjpsbnujsof7VP6BGaL4hhwhrEiNbLqplYWyaBS9QenS/FNLsUpdXNK9M1Q7Ia8kr0TrPogd0FOaU6p0l1QOya3YJXolb6ZIBrfgndKX1ySnVA05p2TpLqleiAa3YJ3TrPolOqBpfiml2KU6p0pmgdk4JXok0ED8WQTD2jDiS4R7M6GT+vAibzP4IsX91eEfFVST2g2QmzCM0Fz7M8RwAJksaC2MwDEuhuiAVIUacRMEGYMiHC4g8QRQiR5qLO0k2ScuakUC6ii+yYik1mdwnhkhXea3YJ3T60SmOaqGl+KCl2KUxzSv0UDsmvJK4ZIe/RA7ppfilMc0+tUDS5OyDPDJK4ZIM634LDuqyvJta3MgQYkaIZNhsc9xo0TKCmfaV4tiRNpw7BB3S1kaCxzXNDmujPLeOfu74AlKRmcArsgNkJYL5n9nsCPbNoxbaIZiPhl9oLQR+liF3lj3jcCSfwgL6FsG2ATuPkHge833WycODhKZnxuzCitua3YJrfgk8bwUpjmqh3TTmlMc09OqB2Q15JXDJPrRA7oKX4pLDHNKY5oApdinZJ49ErhkgGvJO6evRKY5oApfinZB9VSuGSBrdghrfglcMk+tEDusrFMc1mSDi5oIIvBvVZRLCbNEfZTdD9+D+tZnHgB/hud5ZyBhZqzhS7FaXxRsY2iG1zCGxYR34RN05EOhvGMN4JaRWY4gEBHtmRuIUssMWeqglitAJnItIcWOa74ocQfFDfUTBBucCHCYKlOzLTXiovaQinNJYYLrgvndzXZ2VQobk1vwTsmt+CBXFNOdE7oKc0CmCa3YJ2WdbsEDug6p3TugfRVJ+3nxiJDZsF+IfHIyHFsPhWROgVleOfEbbDZXxZ/nCNyG3F0R3utP7IJBJVJeCvBcTatoMeI4iAxxc+IRMxYhPGWfHtUKWrJ+a1fhdm0bA02mzzAcIZewSMy50oTXNPEzOA48VP/DHtChRXwrNa2+U6QMWK6YJc10Rx3pcWOfEeHS4AAG6YlKYnhqJZ4cOGPzkMxCXuaCXkfZm0Dhwk3hcvDtHwXZLV5pjQy2NEdvF3wRGSa1gDaSbOXEEkrPL1rjPicwi7dESE8RmHiCC3eIo4e4/nLVc4NvafdxxbKTxO6bHcQK8RVU0Ng7V2S4xLFFMeFizhvSrDPB2reNFsIPtRhWh0OHbYfkFrYgeC1xbvu3GtcQRMBrDFeWnFrcZLTOLXj7QhMYXviNawXkkcKFdtmtLIrQ9jmubgWkEH5KkfE+1mWmNY7LCtB8t0Mxnn3SWh4D4TXcOLwzywZz4uK80F20Nnu8xhL2X78Gf8UM8D1VRflcck05qufDXtShRZNjjdddvsH/dDvHKan9itkOM3fhPa5ubTMfyQd9MM0NbsE7ZIa3YIBrfglcU1vwTugac0phmmnNK4IGt2CVxTW7BO6B3TS7FNL00uxQKYZpIJ2SYQK9M0rjkhrfgndBHfEewTEJjQQPNkA5pMmxWt4hrj9lwmd1+E8QSFH9m7QAmCSN1267eEnw33+XFb9l0iONxBBBIM1YWnNafbWwWR/wA40+XEAkHtAMx9yI08IjKG6cwQeKDlYbVOXH+a2jIk+OOSr98WNZHARWhgnwJJMB3H7EU/oifuvzkC69b+wbeYSGvO483NfJpOhudyQSSvRF0Q489V3BwwuxQZp1T61TsmvJArjkn1ondeTaO04UBu9FiNYP1jxOgvPJB66dVpfEniODY2TeZvlNrARvOqfutqVEdve0Uud5NjY7edcd3fiuqyFgP1ncNF0bE8CRLQ7z9oOJBM/J3t4uOBjP8AtXfCOGqDX7H2fH2zH/KbR/RRwAI4RJHgyEDcwHjv3k3cbrR2PsyFZoTYUFgYxgkGjvmTVeiz2drAGgAACTQBIAC4SC7e6B69F02myseJOAIzuI0IuXdpzTsg0O0LJEgtc5p32jB3xCZlPh8QE5m7gMVX3jPZtkcyNao7J+RB8tjhNkR0Vx3mkESmS4tlPhxceIKt/W7BV57WvB0e2thvgNa5zC5z2T3S8yAY4T4OcAHDjxk7gs8fGuXr5sc97Hb28d6c94HFSzYHtAjQZNie+3PH+a1u0tlRITiyIxzHC9r2lpHIrURLNktSsrUbFsG0JOB8uL95p3XA1zRkO37PPmQnGKz70IyfL9ZtzlUzHPYZgkHMKU7C8eR4Mmv99tb5Ki4vDPtWhxCG2hvEcC5okfxQz6fJWJYNoQozd+E9rwfumctReDqqGhWrZ+0BMgMi/ead14PquTLDbrE7zIEQxWjjvMMngZEC/qpg+gKdckphmqt8Ne1YE+XaW8RwJaN14/aYb+UtFY2zdqQbQ3ehRGvbkDxGrbxzQez06pXHJDXkndA+tEphmgpfinZAphmn1qmt2CGt+CBXHJZmsd1lBil9ckp1QUuxTsgdPVK9ENeSd0HCLCDgQ4Ag4HiJGijVv8HQyN2C7ywfsECJB08p3Bo/YLVKBTmnZBXx2RbbP+j3yBhAiBzT/wBGPwaNHo7xPa4XB7D+OzR2jm+GCzqrAIGN2Cw6GDffggrp/tHc2+HC/fiDoWTXRE9pMdw/NwA4/qQbTFPLdarJNnGQmsiABcNUFYu2lti08GQ4rAReRDswE6neidF22H2ex4rt+1WmWbYMy46x4k3fIBWWGDkuUs7sEGm2H4cs9lbKDCazM3udVzzxdzW4Alx6ZLJ64J3QOs+iSw6oKXYp2QOkuqV6JryTugfUskp1yTS/FNLsUGv2zsOz2tnl2iE2IMCR7w/ZcOLeRVWeJvY4eL7HE3hf5cQgO0bEuOhA1Vx9kNeSD5H2xsKNZ3mHGhPhuGD2kHUZiomFpo1k5L7G2nsuDaWGHHhMiA4OE5VBvBqCqx8T+x5rpvsUSR/sop4aNiX/ADB1UHz/ACc0zEwcwpLsLxxaLPIOO+3I3/NZ254bj2Z+5HguhnDeHA1a4cHDQlaGNZElFnQtq7P2iA2KAyJg4e48c8Vg7JttjPmWaKY7BcWndigcr1VLmFv8lvth+L7RZyBvFzciexWhcfhz2rkHy7UwkjgTLciD8J4O6Kydk7ZgWls4MVrsTg4atPEKhYG37FbwGx2Br/vXEc1l2xbTZz5tkjGK0cQN6TxoRepg+ienqleip3w77V4jCIVrYXS4TPuRB6P6Kz9i+ILPaxvQYoc77p4OGrT3HBBs69MkpfXJNL8U0uxQKdVmSx2TggTxwSuGSa3pXHJAPe6iUxzTTmlMM0D0vqk8cMk15JXHJArhkndB1TS7FApjmnpfVKYZoa8qoFcMkP1RK45JpfigUxzSmOaUwzSmGaAP/tUrhkmt+CVxyQPW6iUxzTTG9KYZoHdK4ZIemCd0CuGSet1EnjjkgpzQKY5p6X1SmGaa8qoPPbbFCjMLIsNr4Zva9ocDWRVbeKfY/BiTiWR/lk/1cSbmGgf8Tee8rRrjklReg+UvEXhK02N27HguZkb2O/ZeOB0nNRuNZF9mWmzsiNMN7WvY7g4OAcDqDwVdeKPZFZo032V3kOv3XTdCJp9pnKYooPm9zC1bjY/iiPZzwcS3Irc+JvBdqsRlHglrcHj3oZ0eOHIyNFF41lV0WFZvElktoDLRDAd964is7wuR2FGhERbHG8xo4gb0njRwVZOhkLabK8RRoB915lqqLe8Pe1WPBIhWtpdLgd73Yg/F9rn81aGw/E1mtYnBiCcuLHe6/wCWPKaoGy+J7NaxuWlgJzlJwqF2nYMRn5yxxt9t4aXe8NCg+ka4ZJOipTwx7TrRAeIVra5wHA7898Cjsec9VdHnCqg5mt+Cd0pfXJKdUDTmnZPTqleiBryTunWfRKdUDS/FBS7FKdU+pZoHZDXkleidZ9EDuml+KU6p09UDsmtyV6JXoga34J3T60SnVA05p2T06pXogGt2Ca34JXpklOqB3QU5pTqnSXVA7JrySePRPXogd00vxSnVJYdUDS7FOyTx6ZpXog4xYYcC14Dg7hIgEEZEG9V94n9k1ktE3Wf/AGeJfIDehH8H2fw8KKw/XolOqD5c8UeA7XYiTFhEs/tGe9D/AHh8P4gFEo1lovs9zQRIyldxuI9VBfFHstsdqm+EPyeKfuAbhNYeH4ZKD5gdCIWw2btyNBILXH58VMPFHs5tljm50Pfhj+sh+82X62LOY5qHRbCbpJon/hXaJ2pabPZSwFxise90uLYUIiJEmahu7q4L6Nmqt9h3gs2SA61xmlsa0NAaHATZAnMaF5k4jINxmrRVQolMERFPRK4oiB6pTBEQKJ6IiBPFPVEQKYIB0RECqVREGZdVimCIgeiVxRECuaURECmCeiIgVxT1RECmCURECeKVxRED1SWGCIgeiVREA91obT4SsTozYps0PenvXEAkcZlo4H5IiDfSwwWZLCIP/9k=);
+background-size: 20px;
+background-repeat: no-repeat;
+background-position:center right;
+padding-right: 10px;
+}
+input:active{
+    outline-color: #04AA6D;
+}
+#top-nav-bar .tnb-right-section .tnb-jobs-btn {
+    position: relative;
+    width: auto !important;
+    text-align: center;
+    height: 40px;
+    top: 50%;
+    margin-top: -20px;
+    border-radius: 25px;
+    padding: 8px 16px;}
+    .header-right{
+display: flex;
+align-items: center;
+justify-items: flex-end;
+width: 100%;
+gap: 10px;
+    }
+.header-right a{
+    padding: 0px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+.header-right a:last-child{
+    padding: 10px 50px;
+}
+.header-right a{
+    opacity: 50px;
+}
+.img{
+height: 600px;
+}
+.bg{
+    background-image:url();}
+    </style>
+<!--Font Awsome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--Google fonts Family-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ </head>
+<body>
+   <header>
+    
+    <div class="header-left">
+        <a href="#">
+        <div class="w3schools-logo">        
+<img src="https://avatars.githubusercontent.com/u/77673807?v=4">
+     
+</div>
+    </a>
+    <a href="Tutorial">
+        Tutorial
+        <i class="fa-solid fa-caret-down"></i>
+    </a>
+    <a href="Exercise">
+         Exercise
+        <i class="fa-solid fa-caret-down"></i>
+    </a>
+    <a href="Services">
+        Services
+        <i class="fa-solid fa-caret-down"></i>
+    </a>
+    <a href="Certificates">
+         Certificates
+        <i class="fa-solid fa-caret-down"></i>
+    </a>
+    </div>
+    <div id="input">
+    <input type="search" placeholder="search">
+    </div>
+    <div class="header-right"></div>
+    <div id="togglelightdark .btn">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+    </div>
+<div href="Plus"  class="btn btn-link background-color: transparent;" id="plus-btn">
+    plus
+</div>
+<div href="Spaces" class="btn btn-link background-color: transparent;" id="Spaces-btn">
+    Spaces
+</div>
+
+<div href="Getcertified" class="btn btn-link background-color: transparent;" id="GetCertified-btn">
+    GetCertified
+</div>
+<div href="Myw3school" class="btn btn-lin background-color: transparent;" id="MyW3School-btn">
+    MyW3School
+</div>
+<div id="profile.btn">
+    <i class="fa-solid fa-user"></i>
+</div>
+   </header>
+<div class="bg">
+
+</div>
+    </body>
+</html>
